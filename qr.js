@@ -4,7 +4,7 @@ const {makeid} = require('./id');
 const QRCode = require('qrcode');
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
+const fs = require('gs');
 let router = express.Router()
 const pino = require("pino");
 const {
@@ -58,21 +58,20 @@ router.get('/', async (req, res) => {
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id, { text: 'EDNUT-MD;;;' + b64data });
 	
-				   let SIGMA_MD_TEXT = `
-┌⟝——————◀︎ 𝙴𝙳𝙽𝚄𝚃-𝙼𝙳 🔥
-┃ ◀︎ Ednut-md scanned successfully 🕊✘
-┃ Developer:- https://wa.me/2348102487241
-┃ Github:- https://github.com/Ednut001
-┃ Channel:- https://whatsapp.com/channel/0029VaZAY2P4yltOvNaegY2w
-┃ Support:- https://chat.whatsapp.com/EgiP4a7pC6kCNXkRpcC1xA
+				   let SIGMA_V1_TEXT = "HELLO,WHATUP RIRI?
+┌⟝——————◀︎ HALLOW-V1 😇
+┃ ◀︎ HALLOW-V1 scanned successfully 🕸️✘
+┃ Developer:- https://wa.me/2349134456063
+┃ Github:- https://github.com/deepak-Ip-12
+┃ Channel:- https://whatsapp.com/channel/https://whatsapp.com/channel/0029VaraxliFy726F7w6LD1M
+┃ Support:- https://chat.whatsapp.com/https://whatsapp.com/2349134456063
 ┃ 
 ┃ Make sure you provide session id to someone you trust only ⚠️ .
-└ - - - -𝙴𝙳𝙽𝚄𝚃 𝙼𝙳 ✤
-> powered by Ednut Md 2024`
+└ - - - -HALLOW-V1✤
+> powered by HALLOW-V1 2024🕸️
 	 await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
-
-
-
+HOPE YOU LOVE HALLOW-V1
+😀🥹☺️😉🔥😇🥲😈💩💀🫵💋🦷🧠💂🏼
 					await delay(100);
 					await Qr_Code_By_Maher_Zubair.ws.close();
 					return await removeFile("temp/" + id);
