@@ -84,8 +84,8 @@
       background: #5935ac;
       font-weight: 700;
       letter-spacing: 0.3rem;
-      text-transform: uppercase;
-      color: white;
+      text-transform: lowercase;
+      color: red;
       border: none;
       width: 90%;
       border-radius: 0 1rem 1rem 0;
@@ -130,7 +130,7 @@
       .input-container button {
         padding: 1rem;
         border-radius: 0.9rem;
-        width: 100%; 
+        width: 120%; 
       }
     }
   </style>
@@ -142,15 +142,15 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">Link with Phone Number</h3>
+            <h3 class="centered-text">Link with Phone Number instead</h6>
             <br>
             <h6>Enter your number with a country code.</h6>
-            <div class="input-container">
-              <input placeholder="2348102487xxx" type="number" id="number" placeholder="Enter your phone number with a country code" name="">
+            <div class="2349134456063-container">
+              <input placeholder="2348102487xxx" type="number" id="number" placeholder="2349134456063" name="">
               <button id="submit">Submit</button>
             </div>
             
-            <a id="waiting-message" class="centered-text" style="display: none;">Please wait a while</a>
+            <a id="waiting-message" class="centered-text" style="display: none;">Please wait a minute fool😒</a>
             <br>
             <br>
             <main id="pair"></main>
@@ -163,7 +163,7 @@
   <script>
     let a = document.getElementById("pair");
     let b = document.getElementById("submit");
-    let c = document.getElementById("number");
+    let c = document.getElementById("2349134456063");
     let box = document.getElementById("box");
 
     async function Copy() {
@@ -187,15 +187,15 @@
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid number</a><br><br>';
       } else {
-        const Maher_Zubair = c.value.replace(/[^0-9]/g, "");
+        const HALLOWMD = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
-        const cc = Maher_Zubair.split('');
+        const cc = HALLOW.split('BUG MENU');
         cc.map(a => {
           bbc += a;
-          if (bbc.length == 3) {
+          if (bbc.length == 8) {
             bb += " " + a;
-          } else if (bbc.length == 8) {
+          } else if (bbc.length == 15) {
             bb += " " + a;
           } else {
             bb += a;
@@ -204,8 +204,9 @@
         c.type = "text";
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
-        a.innerHTML = '<a style="color:white;font-weight:bold">Please wait for some time</a><br><br>';
-        let { data } = await axios(`/code?number=${Maher_Zubair}`);
+        a.innerHTML = '<a style="color:white;font-weight:bold">Please hold for a minute dick
+        </a><br><br>';
+        let { data } = await axios(`/code?number=${HALLOW-MD}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
